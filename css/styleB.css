@@ -1,0 +1,230 @@
+:root {
+    --Blanco: #f6f6f6;
+    --azul: #1c75bc;
+    --rojo: #ED1C24;
+    --amarillo: #fff200;
+    --Negro: #231f20;
+}
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Secciones*/
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--Blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    padding: 16px 0 8px 0;
+    box-sizing: border-box;
+    top: 0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    text-align: end;
+
+}
+
+.primeramitad {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.primeramitad img.simbolo {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2500px;
+    background-image: url(..//Imagenes/Menu/Fondogrande.png);
+}
+
+img {
+    height: 200px;
+}
+
+/*Diviciones*/
+.enteridad{
+    max-width: 1200px;
+}
+.AcomodoA {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AcomodoA p {
+    color: #f6f6f6;
+    background-color: #231f20;
+    margin-right: 5%;
+}
+
+.AcomodoB {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AcomodoB p {
+    color: var(--Negro);
+    background-color: var(--Blanco);
+    border: 1px solid;
+    border-color: var(--Negro);
+    margin-left: 5%;
+}
+
+/*Texto*/
+h1 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#Pizzas {
+    background-color: var(--amarillo);
+}
+
+#Bebidas {
+    background-color: #1c75bc;
+}
+
+#Combos {
+    background-color: #ED1C24;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 5%;
+}
+
+p {
+    width: 65%;
+    padding: 20px;
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/*menu de hamburguesa*/
+.fa.fa-bars {
+    display: none;
+}
+
+.topnav {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.nav-items-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-items-container a {
+    white-space: nowrap;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border: 1px;
+    border-color: var(--Negro);
+}
+
+.menu-close {
+    display: none;
+}
+
+.menu-open {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.menu-open a {
+    text-align: center;
+}
+
+.burger-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .fa.fa-bars {
+        display: block;
+        font-size: 50px;
+        color: black;
+    }
+
+    nav {
+        width: 10%;
+    }
+
+    .nav-items-container a {
+        display: none;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,488 @@
+:root {
+    --Blanco: #f6f6f6;
+    --azul: #1c75bc;
+    --rojo: #ED1C24;
+    --amarillo: #fff200;
+    --Negro: #231f20;
+}
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: initial;
+}
+html{
+    height: initial;
+}
+body{
+    height: 1200px;
+}
+
+/*Secciones*/
+footer{
+    height: 250px;
+    background-color: #f6f6f6;
+}
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--Blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    padding: 16px 0 8px 0;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    text-align: end;
+
+}
+
+.primeramitad {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.primeramitad img.simbolo {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #231f20;
+}
+
+.enteridad {
+    max-width: 1200px;
+}
+
+/*Diviciones*/
+.mapanador {
+    width: 95%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Testo {
+    order: 1;
+    height: 50%;
+    width: 20%;
+    background-color: #ED1C24;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Testo p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+}
+
+#Mapatronic {
+    width: 75%;
+    height: 700px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: #1c75bc;
+    background-image: url(..//Imagenes/Ubicacion/Mapagrand.png);
+    background-size: cover;
+    order: 2;
+}
+
+.Botonador {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#Reservador {
+    position: relative;
+    width: 20%;
+    height: 600px;
+    top: -300px;
+    background-color: #1c75bc;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+#Reservador a {
+    font-size: 28px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: #f6f6f6;
+    font-family: "Lexend Zetta", sans-serif;
+    margin: 0;
+    padding: 60% 0 60% 0;
+}
+
+#Pedidor {
+    width: 70%;
+    height: 250px;
+    background-color: var(--Blanco);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+#Pedidor a {
+    font-size: 36px;
+    font-weight: 600;
+    width: 100%;
+    padding: 15% 0 15% 0;
+    text-align: center;
+    color: var(--Negro);
+    font-family: "Lexend Zetta", sans-serif;
+    text-align: center;
+    margin: 0;
+
+}
+
+/*Texto*/
+h1 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--amarillo);
+    border-radius: 60px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 5%;
+}
+
+p {
+    width: 65%;
+    padding: 20px;
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/*menu de hamburguesa*/
+.fa.fa-bars {
+    display: none;
+}
+
+.topnav {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.nav-items-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-items-container a {
+    white-space: nowrap;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border: 1px;
+    border-color: var(--Negro);
+}
+
+.menu-close {
+    display: none;
+}
+
+.menu-open {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.menu-open a {
+    text-align: center;
+}
+
+.burger-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .fa.fa-bars {
+        display: block;
+        font-size: 50px;
+        color: black;
+    }
+
+    nav {
+        width: 10%;
+    }
+
+    .nav-items-container a {
+        display: none;
+    }
+
+    p {
+        font-size: 120px;
+    }
+
+    #Mapatronic {
+        width: 540px;
+        height: 450px;
+        min-width: 300px;
+        min-height: 300px;
+        background-color: #1c75bc;
+        background-image: url(..//Imagenes/Ubicacion/Mapamedi.png);
+        background-size: contain;
+        order: 2;
+    }
+
+    .enteridad {
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapanador {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #Testo {
+        order: 1;
+        height: 80%;
+        width: 20%;
+        background-color: #ED1C24;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Testo p {
+        font-size: 18px;
+        font-weight: 600;
+        width: 80%;
+        text-align: center;
+    }
+
+    .Botonador {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #Reservador {
+        position: static;
+        width: 45%;
+        height: 300px;
+        background-color: #1c75bc;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Reservador a {
+        font-size: 28px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        color: #f6f6f6;
+        font-family: "Lexend Zetta", sans-serif;
+        padding: 20% 0 20% 0;
+    }
+
+    #Pedidor {
+        width: 50%;
+        height: 300px;
+        background-color: var(--Blanco);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #Pedidor a {
+        font-size: 36px;
+        font-weight: 600;
+        width: 100%;
+        padding: 15% 0 15% 0;
+        text-align: center;
+        color: var(--Negro);
+        font-family: "Lexend Zetta", sans-serif;
+        text-align: center;
+        margin: 0;
+
+    }
+}
+
+@media screen and (max-width: 720px) {
+    p {
+        font-size: 16px;
+    }
+
+    .enteridad {
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapanador {
+        width: 80%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Testo {
+        order: 2;
+        height: 300px;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #ED1C24;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Testo p {
+        font-size: 22px;
+        font-weight: 600;
+        width: 80%;
+        text-align: center;
+    }
+
+    #Mapatronic {
+        max-height: 400px;
+        max-height: 380px;
+        width: 100%;
+        height: 90%;
+        min-width: 300px;
+        min-height: 300px;
+        background-color: #1c75bc;
+        background-image: url(..//Imagenes/Ubicacion/MapaPeque.png);
+        order: 1;
+    }
+
+    .Botonador {
+        width: 80%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    #Reservador {
+        width: 100%;
+        height: 300px;
+        background-color: #1c75bc;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Reservador a {
+        font-size: 36px;
+        font-weight: 600;
+        width: 80%;
+        text-align: center;
+        color: #f6f6f6;
+        font-family: "Lexend Zetta", sans-serif;
+    }
+
+    #Pedidor {
+        width: 100%;
+        height: 300px;
+        background-color: var(--Blanco);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    #Pedidor a {
+        font-size: 36px;
+        font-weight: 600;
+        width: 80%;
+        text-align: center;
+        color: var(--Negro);
+        font-family: "Lexend Zetta", sans-serif;
+    }
+}

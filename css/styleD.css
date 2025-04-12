@@ -1,0 +1,353 @@
+:root {
+    --Blanco: #f6f6f6;
+    --azul: #1c75bc;
+    --rojo: #ED1C24;
+    --amarillo: #fff200;
+    --Negro: #231f20;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../Imagenes/Menu/Fondogrande.png);
+    background-attachment: fixed;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#enteridad {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Secciones*/
+footer {
+    height: 250px;
+    background-color: #f6f6f6;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--Blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    padding: 16px 0 8px 0;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    text-align: end;
+
+}
+
+.primeramitad {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.primeramitad img.simbolo {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Diviciones*/
+
+
+/*Texto*/
+h1 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 5%;
+}
+
+p {
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5dvw;
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 500;
+}
+
+
+/*menu de hamburguesa*/
+.fa.fa-bars {
+    display: none;
+}
+
+.topnav {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.nav-items-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-items-container a {
+    white-space: nowrap;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border: 1px;
+    border-color: var(--Negro);
+}
+
+.menu-close {
+    display: none;
+}
+
+.menu-open {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.menu-open a {
+    text-align: center;
+}
+
+.burger-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/*------------Seccion de cuponera-------------*/
+.cupon {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+
+.cupo-item {
+    width: 18%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    float: none;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+img {
+    float: none;
+    width: 90%;
+    margin: 5%;
+}
+
+.publicidad {
+    margin-top: 25px;
+    width: 90%;
+    height: 200px;
+    background-color: #1c75bc;
+    background-image: url(../Imagenes/Cuponera/Publicidad.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h3{
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#uno {
+    background-color: #fff200;
+}
+
+#dos {
+    background-color: #f6f6f6;
+    border: 3px solid;
+}
+#tres{
+    background-color: #ED1C24;
+}
+
+#cuatro {
+    background-color: #1c75bc;
+}
+
+#cinco {
+    background-color: #231f20;
+}
+#cinco p{
+    color: #f6f6f6;
+}
+#cinco h3{
+    color: #f6f6f6;
+}
+
+/*--------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .fa.fa-bars {
+        display: block;
+        font-size: 50px;
+        color: black;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-items-container a {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    /*-------Cuponera-----------*/
+    #enteridad{
+        width: 720px;
+    }
+    .cupon {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+
+    .cupo-item {
+        width: 25%;
+        height: auto;
+        background-image: url(./svg/cupon-img-720px.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0.5%;
+        font-size: 1.5dvw;
+
+        .info {
+            float: none;
+            width: 99%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        img {
+            float: none;
+            width: 95%;
+            margin: 0 2%;
+        }
+    }
+
+    .publicidad {
+        width: 90%;
+        height: 175px;
+    }
+
+    /*---------------------*/
+}
+
+@media screen and (max-width: 720px) {
+    p {
+        font-size: 14px;
+    }
+    #enteridad{
+        width: 480px;
+    }
+    .cupon {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 480px;
+    }
+
+    .cupo-item {
+        width: 80%;
+        background-color: var(--rojo);
+        padding: 1em;
+        font-size: 3dvw;
+        margin: 1%;
+    }
+        .info {
+            float: left;
+            width: 55%;
+            padding: 3px;
+            margin: 0%;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin: 0%;
+            width: 40%;
+        }
+    }
